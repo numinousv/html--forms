@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
 });
 
 form.addEventListener("input", () => {
-  if (result.value && amount.value) {
+  if (result?.value && amount?.value) {
     result.value = amount.value;
   }
 });
