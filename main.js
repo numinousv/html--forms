@@ -1,5 +1,5 @@
 const form = document.getElementById("basicForm");
-const amount = form.elements.amount;
+const amount = form.elements.amounts;
 const result = form.elements.result;
 
 form.addEventListener("submit", (e) => {

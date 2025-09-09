@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>formslol</title>
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <style>
     form {
@@ -15,9 +16,40 @@
     }
   </style>
   <body>
-    <div>
-      
-    </div>
-    <form id="basicForm"></form>
+    <form id="basicForm">
+      <div class="name-container">
+        <label for="fname">Name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Axelsson Narnia"
+        />
+      </div>
+
+      <div class="email-container">
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="maili" 
+          name="email"
+          placeholder="axelsson@ovi.com"
+        />
+      </div>
+
+      <div class="range-container">
+        <label for="amounts">Amount (between 0 and 10):</label>
+        <input type="range" id="amounts" name="amounts" min="0" max="10" />
+      </div>
+
+      <div class="result-container">
+        <label for="result">Result: </label>
+        <textarea id="result" name="result" rows="4" cols="50">
+ Here comes the result.</textarea
+        >
+      </div>
+
+      <button type="button" id="submit">Submit!</button>
+    </form>
   </body>
 </html>
